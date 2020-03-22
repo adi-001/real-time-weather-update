@@ -1,12 +1,15 @@
 # Python program to find current weather details of any city  using openweathermap api 
 
 # import required modules
-import sys
-import requests, json 
-from time import sleep
-from urllib.parse import urlencode
-from urllib.request import urlretrieve
-from PIL import Image
+try:
+	import sys
+	import requests, json 
+	from time import sleep
+	from urllib.parse import urlencode
+	from urllib.request import urlretrieve
+	from PIL import Image
+except Exception as e:
+	print("Some modules are missing : {}".format(e))
 
 def anim_text(anim_string):
   for word in anim_string:
