@@ -3,21 +3,21 @@
 # import required modules
 try:
     import sys
-		import requests, json
-		from time import sleep
-		from urllib.parse import urlencode
-		from urllib.request import urlretrieve
-		from PIL import Image
+	import requests, json
+	from time import sleep
+	from urllib.parse import urlencode
+	from urllib.request import urlretrieve
+	from PIL import Image
 
 except Exception as e:
-		print("Some modules are missing : {}".format(e))
+	print("Some modules are missing : {}".format(e))
 
 def anim_text(anim_string):
-  for word in anim_string:
-    print(word, end = "")
-    sys.stdout.flush()
-    sleep(0.05)
-  print("")
+	for word in anim_string:
+    	print(word, end = "")
+    	sys.stdout.flush()
+    	sleep(0.05)
+  		print("")
   
 # Enter your API key here 
 api_key = "c41af2fc52b7d4c77ffb1848c470bc0d"
